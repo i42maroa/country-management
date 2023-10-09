@@ -1,0 +1,6 @@
+input ProductModify{
+    name: String
+    description: String
+    unitPrice: BigDecimal
+    exchangeTypePredefined: String
+}

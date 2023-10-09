@@ -1,8 +1,11 @@
 package com.management.countrymanagement.service;
 
 import com.management.countrymanagement.domain.ProductDocument;
+import com.management.countrymanagement.domain.input.ModifyProductInput;
+import com.management.countrymanagement.domain.input.NewProductInput;
 import com.management.countrymanagement.domain.input.ProductInputQuery;
 import com.management.countrymanagement.domain.output.Pagination;
+import com.mongodb.bulk.BulkWriteResult;
 import org.bson.types.ObjectId;
 import org.springframework.data.domain.Pageable;
 import reactor.core.publisher.Mono;
@@ -12,5 +15,9 @@ public interface ProductService {
 
     Mono<Pagination<ProductDocument>> getProductsPage(ProductInputQuery filters, Pageable pageable);
 
+    Mono<ProductDocument> createProduct(NewProductInput productInput);
 
+    Mono<BulkWriteResult> modifyProduct(ObjectId id, ModifyProductInput productInput);
+
+    Mono<Void> deleteProduct(ObjectId id);
 }

@@ -4,7 +4,12 @@ scalar BigDecimal
 type Query{
 
     exchange(id: ID!): Exchange
-
     product(id: ID!): ProductDocument
     productsPage(input: PagesPageInputQuery, page:Int, size:Int): ProductsPageOutput
+}
+
+type Mutation{
+    createProduct(productInput: ProductInput): ProductDocument
+    modifyProduct(id: ID!, productInput: ProductModify): BulkWriteResult
+    deleteProduct(id: ID!): Boolean
 }

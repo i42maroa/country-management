@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.OffsetDateTime;
+
 @Data
 @Builder
 @NoArgsConstructor
@@ -13,4 +15,8 @@ import lombok.NoArgsConstructor;
 public class ProductInputQuery {
     private String name;
     private ExchangeType exchangeTypePredifined;
+    private OffsetDateTime createdProductDateGte;
+    private OffsetDateTime createdProductDateLte;
+    private OffsetDateTime lastModificationDateGte;
+    private OffsetDateTime lastModificationDateLte;
 }

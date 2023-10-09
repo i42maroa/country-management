@@ -1,0 +1,4 @@
+type BulkWriteResult{
+    insertedCount: Int
+    modifiedCount: Int
+}
