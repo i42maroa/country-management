@@ -1,0 +1,5 @@
+type PageInfo{
+    hasNext: Boolean
+    hasPrevious: Boolean
+    totalCount: Int
+}

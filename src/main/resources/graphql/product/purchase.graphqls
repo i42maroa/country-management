@@ -1,4 +1,4 @@
 type Purchase{
-    product: Product
+    product: ProductDocument
     amount: BigDecimal
 }

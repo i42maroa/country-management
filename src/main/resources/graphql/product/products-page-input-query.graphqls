@@ -1,0 +1,4 @@
+input PagesPageInputQuery{
+    name: String
+    exchangeTypePredefined: String
+}
