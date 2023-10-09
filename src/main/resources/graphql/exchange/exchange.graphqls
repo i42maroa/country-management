@@ -1,6 +1,7 @@
-type ExchangeDocument{
+type Exchange{
     id:ID
     date: DateTime
+    operationType: String
     description: String
-    amount: BigDecimal
+    purchases: [Purchase]
 }

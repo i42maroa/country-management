@@ -1,27 +1,25 @@
 package com.management.countrymanagement.domain;
 
 import com.management.countrymanagement.domain.enums.ExchangeType;
-import com.management.countrymanagement.domain.enums.OperationType;
 import lombok.Data;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
+import java.math.BigDecimal;
 import java.time.OffsetDateTime;
-import java.util.List;
 
-@Document(collection = "exchanges")
+@Document(collection = "products")
 @Data
-public class ExchangeDocument {
-
+public class ProductDocument {
     @Id
     @Field("_id")
-    public ObjectId id;
-    private OperationType operationType;
-    private ExchangeType exchangeType;
-    private OffsetDateTime date;
+    private ObjectId id;
+    private String name;
     private String description;
-    private List<Purchase> purchases;
-
+    private BigDecimal unitPrice;
+    private ExchangeType exchangeTypePredefined;
+    private OffsetDateTime createdProductDate;
+    private OffsetDateTime lastModificationDate;
 }

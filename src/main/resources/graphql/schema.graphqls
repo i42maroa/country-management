@@ -3,5 +3,7 @@ scalar BigDecimal
 
 type Query{
 
-    exchange(id: ID!): ExchangeDocument
+    exchange(id: ID!): Exchange
+
+    product(id: ID!): Product
 }

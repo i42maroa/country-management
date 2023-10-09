@@ -1,0 +1,9 @@
+type Product{
+    id: ID
+    name: String
+    description: String
+    unitPrice: BigDecimal
+    exchangeTypePredefined: String
+    createdProductDate: DateTime
+    lastModificationDate: DateTime
+}
