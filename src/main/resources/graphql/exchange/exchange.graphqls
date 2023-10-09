@@ -1,0 +1,6 @@
+type ExchangeDocument{
+    id:ID
+    date: DateTime
+    description: String
+    amount: BigDecimal
+}

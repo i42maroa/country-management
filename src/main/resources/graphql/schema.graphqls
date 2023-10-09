@@ -1,0 +1,7 @@
+scalar DateTime
+scalar BigDecimal
+
+type Query{
+
+    exchange(id: ID!): ExchangeDocument
+}
