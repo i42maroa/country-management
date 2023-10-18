@@ -1,0 +1,9 @@
+type ExchangeDocument{
+    id:ID
+    creationDate: DateTime
+    lastModificationDate: DateTime
+    operationType: String
+    exchangeType: String
+    description: String
+    purchases: [Purchase]
+}

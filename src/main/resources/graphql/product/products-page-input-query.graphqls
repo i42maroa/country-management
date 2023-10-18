@@ -1,0 +1,8 @@
+input ProductPageInputQuery{
+    name: String
+    exchangeTypePredefined: String
+    createdProductDateGte: DateTime
+    createdProductDateLte: DateTime
+    lastModificationDateGte: DateTime
+    lastModificationDateLte: DateTime
+}

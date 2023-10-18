@@ -1,0 +1,7 @@
+input ProductInput{
+    name: String!
+    description: String
+    unitPrice: BigDecimal!
+    unitName: String
+    exchangeTypePredefined: String
+}

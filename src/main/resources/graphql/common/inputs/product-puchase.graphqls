@@ -1,0 +1,4 @@
+input ProductPurchaseInput{
+    id: ID
+    name: String
+}

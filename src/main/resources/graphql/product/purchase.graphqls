@@ -1,0 +1,6 @@
+type Purchase{
+    product: ProductPurchase
+    amount: BigDecimal
+    unitPrice: BigDecimal
+    unitName: String
+}

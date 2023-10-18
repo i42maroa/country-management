@@ -1,0 +1,8 @@
+input ExchangePageInputQuery{
+    operationType: String
+    exchangeTypePredifined: String
+    creationDateGte: DateTime
+    creationProductDateLte: DateTime
+    lastModificationDateGte: DateTime
+    lastModificationDateLte: DateTime
+}

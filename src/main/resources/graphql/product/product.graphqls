@@ -1,0 +1,10 @@
+type ProductDocument{
+    id: ID
+    name: String
+    description: String
+    unitPrice: BigDecimal
+    unitName: String
+    exchangeTypePredefined: String
+    createdProductDate: DateTime
+    lastModificationDate: DateTime
+}
