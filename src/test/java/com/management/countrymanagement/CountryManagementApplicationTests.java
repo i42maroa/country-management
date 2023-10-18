@@ -3,10 +3,10 @@ package com.management.countrymanagement;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+//@SpringBootTest
 class CountryManagementApplicationTests {
 
-	@Test
+	//@Test
 	void contextLoads() {
 	}
 

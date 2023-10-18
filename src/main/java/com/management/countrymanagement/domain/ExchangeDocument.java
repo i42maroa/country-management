@@ -7,8 +7,9 @@ import com.management.countrymanagement.model.input.NewExchangeInput;
 import com.management.countrymanagement.model.Purchase;
 import lombok.Data;
 import org.bson.types.ObjectId;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.MongoId;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
@@ -19,7 +20,8 @@ import java.util.Optional;
 @Data
 public class ExchangeDocument {
 
-    @MongoId
+    @Id
+    @Field("_id")
     public ObjectId id;
     private OperationType operationType;
     private ExchangeType exchangeType;
