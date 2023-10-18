@@ -1,4 +1,4 @@
-input PagesPageInputQuery{
+input ProductPageInputQuery{
     name: String
     exchangeTypePredefined: String
     createdProductDateGte: DateTime

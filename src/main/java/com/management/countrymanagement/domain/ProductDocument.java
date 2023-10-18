@@ -34,11 +34,13 @@ public class ProductDocument {
     private OffsetDateTime lastModificationDate;
 
     public ProductDocument(NewProductInput productInput){
+        var currentDate = OffsetDateTime.now();
         Optional.ofNullable(productInput.getName()).map(v -> this.name = v);
         Optional.ofNullable(productInput.getDescription()).map(v -> this.description = v);
         Optional.ofNullable(productInput.getUnitPrice()).map(v -> this.unitPrice = v);
         Optional.ofNullable(productInput.getExchangeTypePredefined()).map(v -> this.exchangeTypePredefined = ExchangeType.valueOf(v));
-        this.createdProductDate = OffsetDateTime.now();
+        this.createdProductDate = currentDate;
+        this.lastModificationDate = currentDate;
     }
 
     public ProductDocument(ModifyProductInput productInput){

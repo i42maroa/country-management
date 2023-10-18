@@ -3,8 +3,9 @@ spring:
     name: ""
   data:
     mongodb:
-      uri: mongodb+srv://marin96:608600405AmR@countrymanagement.vqbgb0d.mongodb.net/
+      uri: mongodb+srv://antonio:PASS@countrymanagement.dpzpz6k.mongodb.net/?retryWrites=true&w=majority
       database: management
   graphql:
     graphiql:
       enabled: true
+

@@ -3,13 +3,18 @@ scalar BigDecimal
 
 type Query{
 
-    exchange(id: ID!): Exchange
+    exchange(id: ID!): ExchangeDocument
     product(id: ID!): ProductDocument
-    productsPage(input: PagesPageInputQuery, page:Int, size:Int): ProductsPageOutput
+    productsPage(input: ProductPageInputQuery, page:Int, size:Int): ProductsPageOutput
+    exchangePage(input: ExchangePageInputQuery, page:Int, size:Int): ExchangePageOutput
 }
 
 type Mutation{
     createProduct(productInput: ProductInput): ProductDocument
     modifyProduct(id: ID!, productInput: ProductModify): BulkWriteResult
     deleteProduct(id: ID!): Boolean
+
+    createExchange(exchangeInput: ExchangeInput): ExchangeDocument
+    modifyExchange(id: ID!, exchangeInput: ExchangeModify): BulkWriteResult
+    deleteExchange(id: ID!): Boolean
 }

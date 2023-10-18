@@ -9,4 +9,6 @@ public class Purchase {
 
     private ProductDocument product;
     private BigDecimal amount;
+    private BigDecimal unitPrice;
+    private String unitName;
 }

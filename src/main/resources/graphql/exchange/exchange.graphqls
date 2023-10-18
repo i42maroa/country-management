@@ -1,4 +1,4 @@
-type Exchange{
+type ExchangeDocument{
     id:ID
     date: DateTime
     operationType: String

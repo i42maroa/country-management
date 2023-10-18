@@ -1,0 +1,6 @@
+input PurchaseInput{
+    product: ProductInput!
+    amount: BigDecimal!
+    unitPrice: BigDecimal!
+    unitName: String
+}

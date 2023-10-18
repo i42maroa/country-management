@@ -1,4 +1,6 @@
 type Purchase{
     product: ProductDocument
     amount: BigDecimal
+    unitPrice: BigDecimal
+    unitName: String
 }

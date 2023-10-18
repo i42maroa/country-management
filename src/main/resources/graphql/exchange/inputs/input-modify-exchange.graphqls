@@ -1,0 +1,6 @@
+input ExchangeModify{
+    operationType: String
+    exchangeType: String
+    description: BigDecimal
+    purchases: [PurchaseInput]
+}

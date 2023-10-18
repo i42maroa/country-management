@@ -1,0 +1,4 @@
+type ExchangePageOutput{
+    items: [ExchangeDocument]!
+    pageInfo: PageInfo
+}
