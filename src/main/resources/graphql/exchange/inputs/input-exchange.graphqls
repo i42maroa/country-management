@@ -1,6 +1,6 @@
 input ExchangeInput{
     operationType: String!
     exchangeType: String!
-    description: BigDecimal
+    description: String
     purchases: [PurchaseInput]!
 }

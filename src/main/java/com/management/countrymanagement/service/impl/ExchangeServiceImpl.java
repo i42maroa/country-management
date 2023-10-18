@@ -1,10 +1,10 @@
 package com.management.countrymanagement.service.impl;
 
 import com.management.countrymanagement.domain.ExchangeDocument;
-import com.management.countrymanagement.domain.input.ExchangeInputQuery;
-import com.management.countrymanagement.domain.input.ModifyExchangeInput;
-import com.management.countrymanagement.domain.input.NewExchangeInput;
-import com.management.countrymanagement.domain.output.Pagination;
+import com.management.countrymanagement.model.input.ExchangeInputQuery;
+import com.management.countrymanagement.model.input.ModifyExchangeInput;
+import com.management.countrymanagement.model.input.NewExchangeInput;
+import com.management.countrymanagement.model.output.Pagination;
 import com.management.countrymanagement.repository.ExchangesRepository;
 import com.management.countrymanagement.service.ExchangeService;
 import com.mongodb.bulk.BulkWriteResult;

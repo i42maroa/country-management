@@ -2,14 +2,16 @@ package com.management.countrymanagement.domain;
 
 import com.management.countrymanagement.domain.enums.ExchangeType;
 import com.management.countrymanagement.domain.enums.OperationType;
-import com.management.countrymanagement.domain.input.ModifyExchangeInput;
-import com.management.countrymanagement.domain.input.NewExchangeInput;
+import com.management.countrymanagement.model.input.ModifyExchangeInput;
+import com.management.countrymanagement.model.input.NewExchangeInput;
+import com.management.countrymanagement.model.Purchase;
 import lombok.Data;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.MongoId;
 
 import java.time.OffsetDateTime;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -24,7 +26,7 @@ public class ExchangeDocument {
     private OffsetDateTime creationDate;
     private OffsetDateTime lastModificationDate;
     private String description;
-    private List<Purchase> purchases;
+    private List<Purchase> purchases = new ArrayList<>();
 
     public ExchangeDocument(NewExchangeInput productInput){
         var currentDate = OffsetDateTime.now();

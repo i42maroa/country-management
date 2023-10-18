@@ -1,5 +1,5 @@
 input PurchaseInput{
-    product: ProductInput!
+    product: ProductPurchaseInput!
     amount: BigDecimal!
     unitPrice: BigDecimal!
     unitName: String

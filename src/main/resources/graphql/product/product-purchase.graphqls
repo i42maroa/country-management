@@ -1,0 +1,4 @@
+type ProductPurchase{
+    id: ID
+    name: String
+}

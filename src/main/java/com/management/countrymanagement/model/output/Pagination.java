@@ -1,4 +1,4 @@
-package com.management.countrymanagement.domain.output;
+package com.management.countrymanagement.model.output;
 
 import lombok.Getter;
 import org.springframework.data.domain.Pageable;

@@ -3,8 +3,8 @@ package com.management.countrymanagement.repository.custom.impl;
 import com.management.countrymanagement.constant.GraphqlApiConstant;
 import com.management.countrymanagement.constant.MongoCollections;
 import com.management.countrymanagement.domain.ProductDocument;
-import com.management.countrymanagement.domain.input.ModifyProductInput;
-import com.management.countrymanagement.domain.input.ProductInputQuery;
+import com.management.countrymanagement.model.input.ModifyProductInput;
+import com.management.countrymanagement.model.input.ProductInputQuery;
 import com.management.countrymanagement.repository.BulkWriteRepository;
 import com.management.countrymanagement.repository.custom.CustomizedProductRepository;
 import com.mongodb.bulk.BulkWriteResult;
@@ -73,6 +73,7 @@ public class CustomizedProductRepositoryImpl implements CustomizedProductReposit
                         equalsUpdate("name", modifyProductInput.getName()),
                         equalsUpdate("description", modifyProductInput.getDescription()),
                         equalsUpdate("unitPrice", modifyProductInput.getUnitPrice()),
+                        equalsUpdate("unitName", modifyProductInput.getUnitName()),
                         equalsUpdate("exchangeTypePredefined", modifyProductInput.getExchangeTypePredefined()),
                         equalsUpdate("lastModificationDate", OffsetDateTime.now())
                 ).flatMap(Function.identity())

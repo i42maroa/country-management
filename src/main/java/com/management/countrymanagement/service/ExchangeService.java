@@ -1,9 +1,10 @@
 package com.management.countrymanagement.service;
 
 import com.management.countrymanagement.domain.ExchangeDocument;
-import com.management.countrymanagement.domain.ProductDocument;
-import com.management.countrymanagement.domain.input.*;
-import com.management.countrymanagement.domain.output.Pagination;
+import com.management.countrymanagement.model.input.ExchangeInputQuery;
+import com.management.countrymanagement.model.input.ModifyExchangeInput;
+import com.management.countrymanagement.model.input.NewExchangeInput;
+import com.management.countrymanagement.model.output.Pagination;
 import com.mongodb.bulk.BulkWriteResult;
 import org.bson.types.ObjectId;
 import org.springframework.data.domain.Pageable;

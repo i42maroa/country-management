@@ -1,4 +1,4 @@
-package com.management.countrymanagement.domain.input;
+package com.management.countrymanagement.model.input;
 
 import com.management.countrymanagement.domain.enums.ExchangeType;
 import lombok.Data;

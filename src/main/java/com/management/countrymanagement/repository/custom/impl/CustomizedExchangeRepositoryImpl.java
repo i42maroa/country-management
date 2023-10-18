@@ -2,9 +2,8 @@ package com.management.countrymanagement.repository.custom.impl;
 
 import com.management.countrymanagement.constant.MongoCollections;
 import com.management.countrymanagement.domain.ExchangeDocument;
-import com.management.countrymanagement.domain.ProductDocument;
-import com.management.countrymanagement.domain.input.ExchangeInputQuery;
-import com.management.countrymanagement.domain.input.ModifyExchangeInput;
+import com.management.countrymanagement.model.input.ExchangeInputQuery;
+import com.management.countrymanagement.model.input.ModifyExchangeInput;
 import com.management.countrymanagement.repository.BulkWriteRepository;
 import com.management.countrymanagement.repository.custom.CustomizedExchangeRepository;
 import com.mongodb.bulk.BulkWriteResult;

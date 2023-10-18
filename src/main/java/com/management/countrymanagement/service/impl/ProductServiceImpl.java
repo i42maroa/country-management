@@ -1,10 +1,10 @@
 package com.management.countrymanagement.service.impl;
 
 import com.management.countrymanagement.domain.ProductDocument;
-import com.management.countrymanagement.domain.input.ModifyProductInput;
-import com.management.countrymanagement.domain.input.NewProductInput;
-import com.management.countrymanagement.domain.input.ProductInputQuery;
-import com.management.countrymanagement.domain.output.Pagination;
+import com.management.countrymanagement.model.input.ModifyProductInput;
+import com.management.countrymanagement.model.input.NewProductInput;
+import com.management.countrymanagement.model.input.ProductInputQuery;
+import com.management.countrymanagement.model.output.Pagination;
 import com.management.countrymanagement.repository.ProductsRepository;
 import com.management.countrymanagement.service.ProductService;
 import com.mongodb.bulk.BulkWriteResult;
@@ -13,9 +13,6 @@ import org.bson.types.ObjectId;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
-import reactor.core.publisher.MonoSink;
-
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor

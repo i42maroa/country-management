@@ -1,9 +1,8 @@
 package com.management.countrymanagement.repository.custom;
 
 import com.management.countrymanagement.domain.ProductDocument;
-import com.management.countrymanagement.domain.input.ModifyProductInput;
-import com.management.countrymanagement.domain.input.NewProductInput;
-import com.management.countrymanagement.domain.input.ProductInputQuery;
+import com.management.countrymanagement.model.input.ModifyProductInput;
+import com.management.countrymanagement.model.input.ProductInputQuery;
 import com.mongodb.bulk.BulkWriteResult;
 import org.bson.types.ObjectId;
 import org.springframework.data.domain.Pageable;

@@ -1,8 +1,8 @@
 package com.management.countrymanagement.domain;
 
 import com.management.countrymanagement.domain.enums.ExchangeType;
-import com.management.countrymanagement.domain.input.ModifyProductInput;
-import com.management.countrymanagement.domain.input.NewProductInput;
+import com.management.countrymanagement.model.input.ModifyProductInput;
+import com.management.countrymanagement.model.input.NewProductInput;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,7 +12,6 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
-import javax.swing.text.html.Option;
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 import java.util.Optional;
@@ -40,6 +39,7 @@ public class ProductDocument {
         Optional.ofNullable(productInput.getDescription()).map(v -> this.description = v);
         Optional.ofNullable(productInput.getUnitPrice()).map(v -> this.unitPrice = v);
         Optional.ofNullable(productInput.getExchangeTypePredefined()).map(v -> this.exchangeTypePredefined = ExchangeType.valueOf(v));
+        Optional.ofNullable(productInput.getUnitName()).map(v -> this.unitName = v);
         this.createdProductDate = currentDate;
         this.lastModificationDate = currentDate;
     }
