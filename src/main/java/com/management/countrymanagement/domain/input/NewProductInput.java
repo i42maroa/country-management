@@ -11,4 +11,5 @@ public class NewProductInput {
     private String description;
     private BigDecimal unitPrice;
     private String exchangeTypePredefined;
+    private String unitName;
 }

@@ -29,6 +29,7 @@ public class ProductDocument {
     private String name;
     private String description;
     private BigDecimal unitPrice;
+    private String unitName;
     private ExchangeType exchangeTypePredefined;
     private OffsetDateTime createdProductDate;
     private OffsetDateTime lastModificationDate;

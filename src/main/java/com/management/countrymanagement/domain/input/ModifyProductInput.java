@@ -10,4 +10,5 @@ public class ModifyProductInput {
     private String description;
     private BigDecimal unitPrice;
     private String exchangeTypePredefined;
+    private String unitName;
 }
