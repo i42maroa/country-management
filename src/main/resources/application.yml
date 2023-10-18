@@ -1,11 +1,5 @@
 spring:
   application:
-    name: ""
-  data:
-    mongodb:
-      uri: mongodb+srv://antonio:PASS@countrymanagement.dpzpz6k.mongodb.net/?retryWrites=true&w=majority
-      database: management
-  graphql:
-    graphiql:
-      enabled: true
+    name: "country_management"
+
 
